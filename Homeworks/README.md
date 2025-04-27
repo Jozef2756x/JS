@@ -157,4 +157,3 @@ Inside the constructor, define a method describe that returns:
 Create two instances of Animal with different values.
 Call their describe methods and print the results.
 Do NOT use arrow functions for any method or constructor!
-
