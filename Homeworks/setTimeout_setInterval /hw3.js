@@ -6,7 +6,7 @@ fetch(url)
     return response.json()
   })
   .then(data => {
-    console.log("Title of the first post:", data[0].title)
+    console.log(data[0].title)
   })
 }
 
