@@ -1,0 +1,110 @@
+/* Հիմնական reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#status {
+  text-align: center;
+  color: #ff3333;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+ul#product-list {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  list-style: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul#product-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+ul#product-list li:last-child {
+  border-bottom: none;
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#toast.error {
+  background-color: #f44336;
+}
+
+#toast.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
